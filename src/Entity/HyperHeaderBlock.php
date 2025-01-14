@@ -1,8 +1,8 @@
 <?php
 
-namespace Czdb\Entity;
+namespace Halo123450\IpLocation\Entity;
 
-use Czdb\Utils\ByteUtil;
+use Halo123450\IpLocation\Utils\ByteUtil;
 
 class HyperHeaderBlock {
     const HEADER_SIZE = 12;

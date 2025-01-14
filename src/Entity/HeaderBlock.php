@@ -1,6 +1,6 @@
 <?php
 
-namespace Czdb\Entity;
+namespace Halo123450\IpLocation\Entity;
 
 class HeaderBlock {
     private $indexStartIp;

@@ -1,12 +1,12 @@
 {
-    "name": "czdb/searcher",
+    "name": "halo123450/iplocation",
     "description": "A PHP library for efficient IP geolocation using compact database formats.",
     "type": "library",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "Liu Cong",
-            "email": "liucong@rtbasia.com"
+            "name": "Tanqm",
+            "email": "tan840027@163.com"
         }
     ],
     "require": {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Czdb\\": "src/"
+            "Halo123450\\IpLocation\\": "src/"
         }
     },
     "config": {

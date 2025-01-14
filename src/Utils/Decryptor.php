@@ -1,5 +1,5 @@
 <?php
-namespace Czdb\Utils;
+namespace Halo123450\IpLocation\Utils;
 
 class Decryptor {
     private $keyBytes;

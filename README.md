@@ -1,6 +1,6 @@
-# CZDB Searcher
+# IpLocation Searcher
 
-CZDB Searcher 是一个用于高效 IP 地理位置查询的 PHP 库，它使用紧凑的数据库格式和二叉树搜索算法，提供快速准确的 IP 查找功能。
+IpLocation Searcher 是一个用于高效 IP 地理位置查询的 PHP 库，它使用紧凑的数据库格式和二叉树搜索算法，提供快速准确的 IP 查找功能。
 
 ## 特点
 
@@ -13,10 +13,10 @@ CZDB Searcher 是一个用于高效 IP 地理位置查询的 PHP 库，它使用
 
 ## 安装
 
-在项目目录下运行以下命令来安装 CZDB Searcher：
+在项目目录下运行以下命令来安装 IpLocation Searcher：
 
 ```bash
-composer require czdb/searcher
+composer require halo123450/iplocation
 ```
 
 如果找不到包，可能是因为你没有使用composer 2.x版本，可以使用以下命令来安装composer 2.x版本：
@@ -33,17 +33,17 @@ composer self-update --2
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 
-use Czdb\DbSearcher;
+use Halo123450\IpLocation\DbSearcher;
 
 $dbSearcher = new DbSearcher("/path/to/your/database.czdb", "BTREE", "YourEncryptionKey");
 
 $ip = "8.8.8.8";
-$region = $dbSearcher->search($ip);
+// 如果批量查询,则建议使用$dbSearcher->search($ip); 执行完后关闭数据库: $dbSearcher->close();
+$region = $dbSearcher->query($ip); 
 
 echo "搜索结果：\n";
 print_r($region);
 
-$dbSearcher->close();
 ```
 
 请将 `"/path/to/your/database.czdb"` 和 `"YourEncryptionKey"` 替换为您项目中实际的数据库路径和加密密钥。

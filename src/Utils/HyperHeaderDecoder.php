@@ -1,10 +1,10 @@
 <?php
 
-namespace Czdb\Utils;
+namespace Halo123450\IpLocation\Utils;
 
 use Exception;
-use Czdb\Entity\DecryptedBlock;
-use Czdb\Entity\HyperHeaderBlock;
+use Halo123450\IpLocation\Entity\DecryptedBlock;
+use Halo123450\IpLocation\Entity\HyperHeaderBlock;
 
 class HyperHeaderDecoder {
 
